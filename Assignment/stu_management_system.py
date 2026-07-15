@@ -16,6 +16,17 @@ if(op == "A"):
     student.update({name : marks})
     print("Added Successfully")
     print(student)
+elif(op == "B"):
+    name = input("Enter your name : ")
+    if student.get(name) != None:
+        marks = input("Enter your marks here : ")
+        student[name] = marks
+        print("Marks updated Successfully!")
+        print(student)
 
+elif(op == "D"):
+    print(student)
+else:
+    print("Invalid Operation!")
 
     
