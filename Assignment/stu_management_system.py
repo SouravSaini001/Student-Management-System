@@ -9,5 +9,13 @@ student = {
     "Vikas": 78,  
 }
 
+op = input("What operation to Perform : ")
+if(op == "A"):
+    name = input("Enter your name here : ")
+    marks = input("Enter your marks here : ")
+    student.update({name : marks})
+    print("Added Successfully")
+    print(student)
+
 
     
