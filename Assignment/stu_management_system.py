@@ -23,7 +23,12 @@ elif(op == "B"):
         student[name] = marks
         print("Marks updated Successfully!")
         print(student)
-
+elif(op == "C"):
+    name = input("Enter your name here : ")
+    if student.get(name) != None:
+        print(f"Congrulations the user found with this name : ")
+    else:
+        print("Sorry the user not found!")
 elif(op == "D"):
     print(student)
 else:
